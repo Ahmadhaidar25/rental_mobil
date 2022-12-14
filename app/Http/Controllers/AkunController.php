@@ -109,9 +109,6 @@ public function ubah_password(Request $request)
   auth()->user()->update(['password' => Hash::make($request->password)]);
   toast('Password berhasil diubah','success');
   return back();
-
-
-
 }else{
  toast('Password lama tidak sesuai','warning');
  return back();

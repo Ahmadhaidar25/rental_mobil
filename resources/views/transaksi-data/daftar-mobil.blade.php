@@ -47,7 +47,7 @@
 				<div class="row">
 					<div class="col-sm-5">
 						<a href="{{url('/komentar/'.$x->id)}}" style="text-decoration: none;"><span><i class="bi bi-chat-right-dots"></i></span>
-							Komentar&nbsp;<span><small>{{ $x->mobil_id }}</small></span>
+							Komentar&nbsp;<span><small></small></span>
 						</a>
 					</div>
 

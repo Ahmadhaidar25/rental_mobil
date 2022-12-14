@@ -154,13 +154,13 @@ public function get_daftar_mobil()
 {
 
     $data = mobil::paginate(6);
-    $like = like::where('mobil_id');
+    //$like = like::where('mobil_id');
     $pesanan = transaksimobil::where('user_id', Auth::user()->id)->count();
     $data_pesanan = transaksimobil::all();
-    $jumlah=komentar::where('mobil_id')->count();
+    //$jumlah=komentar::where('mobil_id')->count();
+
     
-    return view('transaksi-data.daftar-mobil',compact('data','pesanan','data_pesanan',
-        'like','jumlah'));
+    return view('transaksi-data.daftar-mobil',compact('data','pesanan','data_pesanan'));
 }
 
 function order_mobil($id)

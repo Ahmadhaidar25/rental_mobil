@@ -21,9 +21,13 @@ class role
         }elseif (auth()->user()->role == 2) {
             return $next($request);
         }elseif(auth()->user()->role == 3){
-         return $next($request); 
-     }
-     else{
+           return $next($request); 
+       }elseif (auth()->user()->status==1) {
+           return $next($request); 
+       }elseif (auth()->user()->status==0) {
+           return redirect('/');
+       }
+       else{
         return redirect('/');
     }
     
