@@ -46,8 +46,9 @@
 				<hr>
 				<div class="row">
 					<div class="col-sm-5">
-						<a href="{{url('/komentar/'.$x->id)}}" style="text-decoration: none;"><span><i class="bi bi-chat-right-dots"></i></span>
-							Komentar&nbsp;<span><small></small></span>
+						<a href="{{url('/komentar/'.$x->id)}}" style="text-decoration: none;" 
+							class="text-secondary"><span><i class="bi bi-chat-right-dots"></i></span>
+							Komentar&nbsp;<span><small>{{$x->komentar->count()}}</small></span>
 						</a>
 					</div>
 
