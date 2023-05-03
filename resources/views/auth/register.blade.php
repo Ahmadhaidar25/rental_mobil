@@ -92,7 +92,7 @@
                   </div>
                   <div class="form-group">
                     <label>Email<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="Email@gmail.com" value="{{old('email')}}">
+                    <input type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="Email@gmail.com" value="{{old('email')}}">
 
                     @if($errors->has('email'))
                     <span class="invalid-feedback">{{ $errors->first('email') }}</span>
@@ -117,17 +117,7 @@
                     @endif
                   </div>
 
-                  <div class="form-group {{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
-                   
-                     {!! NoCaptcha::display() !!}
-                     {!! NoCaptcha::renderJs() !!}
-                     @if ($errors->has('g-recaptcha-response'))
-                     <span class="help-block text-danger">
-                      <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                    </span>
-                    @endif
-                
-                </div>
+                 
 
                 <div class="form-group">
                  <input type="hidden" name="role" value="3">

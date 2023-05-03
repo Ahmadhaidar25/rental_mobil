@@ -112,17 +112,7 @@
                 @endif
               </div>
 
-              <div class="form-group row {{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
-                <div class="col-md-6">
-                 {!! NoCaptcha::display() !!}
-                 {!! NoCaptcha::renderJs() !!}
-                 @if ($errors->has('g-recaptcha-response'))
-                 <span class="help-block text-danger">
-                  <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                </span>
-                @endif
-              </div>
-            </div>
+             
 
 
             <div class="pt-1 mb-4">

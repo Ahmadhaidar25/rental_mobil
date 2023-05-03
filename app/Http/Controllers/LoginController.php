@@ -32,12 +32,12 @@ class LoginController extends Controller
         $roles=[
             'email' => 'required|email|max:255',
             'password' => 'required',
-            'g-recaptcha-response' => 'required|captcha'
+            //'g-recaptcha-response' => 'required|captcha'
         ];
         $customessage=[
             'email.required' =>'Email is required',
             'password.required' => 'Password is required',
-            'g-recaptcha-response.required' => 'Captcha harus di centang',
+            //'g-recaptcha-response.required' => 'Captcha harus di centang',
         ];
         $this->validate($request,$roles,$customessage);
         

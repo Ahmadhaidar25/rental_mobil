@@ -31,12 +31,12 @@ class RegisterController extends Controller
      return redirect()->back();
  }else{
     $request->validate([
-        'email' => 'required|min:dns',
+        'email' => 'required',
         'password' => 'required|min:6|max:8',
-        'g-recaptcha-response' => 'required|captcha'
+        //'g-recaptcha-response' => 'required|captcha'
     ],[
       'password.required' => 'password min 6',
-      'g-recaptcha-response.required' => 'Captcha harus di centang',
+      //'g-recaptcha-response.required' => 'Captcha harus di centang',
   ]);
 
     $post = new User;

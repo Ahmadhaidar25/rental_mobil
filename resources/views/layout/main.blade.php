@@ -289,7 +289,7 @@
 	<div class="container my-auto">
 		<div class="copyright text-center my-auto">
 			<span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - 
-				<b><a href="" target="_blank">Aziz Nanada Aditiya</a></b>
+				<b><a href="" target="_blank">Ahmad Haidar</a></b>
 			</span>
 		</div>
 	</div>
